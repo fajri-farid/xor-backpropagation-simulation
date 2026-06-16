@@ -37,6 +37,8 @@ Aturan XOR:
 
 XOR tidak *linearly separable*, sehingga jaringan membutuhkan hidden layer untuk mempelajari hubungan antar input.
 
+Dataset disimpan dalam file [`dataset/xor_dataset.csv`](dataset/xor_dataset.csv) dengan kolom `x1`, `x2`, dan `y`. Notebook membaca file CSV tersebut, lalu mengubahnya menjadi array `X` dan `y` untuk proses training.
+
 ## Arsitektur Jaringan
 
 Model menggunakan arsitektur sederhana:
@@ -130,6 +132,8 @@ Materi yang dibahas:
 
 ```text
 xor-backpropagation-simulation/
++-- dataset/
+|   +-- xor_dataset.csv
 +-- images/
 |   +-- flow.png
 |   +-- jaringan.png
